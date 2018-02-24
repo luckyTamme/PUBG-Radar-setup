@@ -1,7 +1,10 @@
 #!/bin/bash
 apt-get update
 
+sysctl -w net.ipv4.ip_forward=1
+
 mkdir PUBG-Radar
+
 cd PUBG-Radar
 
 mkdir /opt/Oracle_Java
