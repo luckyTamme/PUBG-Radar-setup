@@ -36,7 +36,7 @@ apt-get -y install dsniff
 
 apt-get -y install git
 
-git clone --single-branch -b linux "https://github.com/AiYinZiLeGong/PUBG-Radar"
+git clone "https://github.com/Jerry1211/PUBG-Radar"
 
 cd PUBG-Radar
 
@@ -78,5 +78,3 @@ java -jar pubg-radar-1.0-SNAPSHOT-jar-with-dependencies.jar $radar_ip PortFilter
 EOF
 
 chmod +x run.sh
-
-
