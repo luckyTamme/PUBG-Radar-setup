@@ -1,4 +1,13 @@
+git clone --recursive https://github.com/sm00thelf/pubg_radar_ez_setup
 
-Das Skript runterladen, mit "chmod +x "dateiname" ausführbar machen mit "./run "dateiname" ausführen und dann in dem verzeichnis /home/"username"/Desktop/PUBG-Radar/PUBG-Radar/target die Datei run.sh mit "./run.sh" ausführen.
- 
- Danach das Spiel starten
+cd pubg_radar_ez_setup/
+
+chmod +x pubg-radar.sh
+
+./pubg-radar.sh
+
+cd PUBG-Radar/PUBG-Radar/target/
+
+./run.sh
+
+Danach das Spiel starten und Siege farmen.
