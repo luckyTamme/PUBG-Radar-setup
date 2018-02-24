@@ -27,11 +27,11 @@ update-alternatives --set "javaws" "/opt/Oracle_Java/jdk1.8.0_152/bin/javaws"
 
 update-alternatives --set "jar" "/opt/Oracle_Java/jdk1.8.0_152/bin/jar"
 
-apt-get install maven
+apt-get -y install maven
 
-apt-get install dsniff
+apt-get -y install dsniff
 
-apt-get install git
+apt-get -y install git
 
 git clone --single-branch -b linux "https://github.com/AiYinZiLeGong/PUBG-Radar"
 
