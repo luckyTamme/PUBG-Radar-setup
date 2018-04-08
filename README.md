@@ -1,13 +1,18 @@
-git clone --recursive https://github.com/sm00thelf/pubg_radar_ez_setup
+#Fast setup for the PUBG Radar on linux.
 
-cd pubg_radar_ez_setup/
+It installs the latest 4k version from Albedo, which supports the current encrytion. All requirements like java are also installed
 
-chmod +x pubg-radar.sh
+**To run the setup you simply need to execute this line of code in your terminal**
+`sudo su && wget https://raw.githubusercontent.com/zecjy/PUBG_radar_setup/master/setup.sh && chmod +x setup.sh && ./setup`
 
-./pubg-radar.sh
+**In the setup process you will be asked for 3 IP addresses, your gamePC where PUBG runs, the RadarPC IP on which the setup runs and your router IP which is displayed as gateway.
+On windows, use `ipconfig` in cmd to find your IP and gateway, and on linux use `ifconfig`. Your interface will most likley be `ens33` or similar, don't choose `lo`**
 
-cd PUBG-Radar/PUBG-Radar/target/
+* *Both systems need to be connected via LAN and in the same network!* *
 
-./run.sh
+**To start the Radar execute:**
+`sudo ./run.sh`
 
-Danach das Spiel starten und Siege farmen.
+**Credits to:**
+* *Albedo: https://yougame.biz/threads/40333
+sm00thelf for the basic script: https://high-minded.net/members/sm00thelf.40217/* *
