@@ -25,6 +25,8 @@ apt-get -y install dsniff
 
 wget -O Radar-4k.jar https://www.xup.in/dl,58876555/Albedo-0.1-jar-with-dependencies.jar/
 
+cd ..
+
 clear
 echo "Ip Adresse des Game PC eingeben (192.168.??.??) und Enter druecken"
 read game_ip
@@ -50,7 +52,7 @@ cat >run.sh <<EOF
 #!/bin/bash
 arpspoof -i $interface -t $game_ip $router_ip & >/dev/null
 arpspoof -i $interface -t $router_ip $game_ip & >/dev/null
-java -jar Radar-4k.jar $radar_ip PortFilter $game_ip
+java -jar Radar/Radar-4k.jar $radar_ip PortFilter $game_ip
 
 EOF
 
