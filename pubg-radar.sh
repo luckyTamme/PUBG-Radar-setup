@@ -50,8 +50,9 @@ cat >run.sh <<EOF
 #!/bin/bash
 arpspoof -i $interface -t $game_ip $router_ip & >/dev/null
 arpspoof -i $interface -t $router_ip $game_ip & >/dev/null
-java -jar pubg-radar-1.0-SNAPSHOT-jar-with-dependencies.jar $radar_ip PortFilter $game_ip
+java -jar Radar-4k.jar $radar_ip PortFilter $game_ip
 
 EOF
 
 chmod +x run.sh
+rm -r ftp.osuosl.org/
