@@ -1,4 +1,4 @@
-#Fast setup for the PUBG Radar on linux.
+#Fast setup for the PUBG Radar on linux.#
 
 It installs the latest 4k version from Albedo, which supports the current encrytion. All requirements like java are also installed
 
