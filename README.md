@@ -3,6 +3,7 @@
 It installs the latest 4k version from Albedo, which supports the current encrytion. All requirements like java are also installed
 
 **To run the setup you simply need to execute this commands in your terminal**
+
 `sudo su`
 
 `wget https://raw.githubusercontent.com/zecjy/PUBG_radar_setup/master/setup.sh`
