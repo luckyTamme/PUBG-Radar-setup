@@ -23,7 +23,7 @@ update-alternatives --set jar /opt/Oracle_Java/jdk1.8.0_152/bin/jar
 
 apt-get -y install dsniff
 
-wget -O Radar-4k.jar https://www.xup.in/dl,10707736/Albedo-0.1-jar-with-dependencies.jar/
+wget --no-check-certificate https://drive.google.com/uc?id=1_tDwagYRFwWTyopy8KlY_q58hTK5EY0L -O Radar-4k.jar
 
 cd ..
 
