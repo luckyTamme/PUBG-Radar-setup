@@ -4,8 +4,11 @@ It installs the latest 4k version from Albedo, which supports the current encryt
 
 **To run the setup you simply need to execute this commands in your terminal**
 `sudo su`
+
 `wget https://raw.githubusercontent.com/zecjy/PUBG_radar_setup/master/setup.sh`
+
 `chmod +x setup.sh`
+
 `./setup`
 
 **In the setup process you will be asked for 3 IP addresses, your gamePC where PUBG runs, the RadarPC IP on which the setup runs and your router IP which is displayed as gateway.
