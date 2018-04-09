@@ -8,7 +8,7 @@ cd Radar
 
 mkdir /opt/Oracle_Java
 wget ftp.osuosl.org/pub/funtoo/distfiles/oracle-java/jdk-8u152-linux-x64.tar.gz
-tar -xzf jdk-8u152-linux-x64.tar.gz
+tar -xzf jdk-8u152-linux-x64.tar.gz -C /opt/Oracle_Java/
 rm jdk-8u152-linux-x64.tar.gz
 
 update-alternatives --install /usr/bin/java java /opt/Oracle_Java/jdk1.8.0_152/bin/java 1
@@ -23,7 +23,7 @@ update-alternatives --set jar /opt/Oracle_Java/jdk1.8.0_152/bin/jar
 
 apt-get -y install dsniff
 
-wget -O Radar-4k.jar https://www.xup.in/dl,58876555/Albedo-0.1-jar-with-dependencies.jar/
+wget -O Radar-4k.jar https://www.xup.in/dl,10707736/Albedo-0.1-jar-with-dependencies.jar/
 
 cd ..
 
