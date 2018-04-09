@@ -52,7 +52,7 @@ cat >run.sh <<EOF
 #!/bin/bash
 arpspoof -i $interface -t $game_ip $router_ip & >/dev/null
 arpspoof -i $interface -t $router_ip $game_ip & >/dev/null
-java -jar Radar/Radar-4k.jar $radar_ip PortFilter $game_ip
+java -jar Radar/Radar-4k.jar $radar_ip PortFilter $game_ip 204cad66-6400-4887-9769-068028-555 068949123
 
 EOF
 
