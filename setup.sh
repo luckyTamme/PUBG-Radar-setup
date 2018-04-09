@@ -57,4 +57,3 @@ java -jar Radar/Radar-4k.jar $radar_ip PortFilter $game_ip
 EOF
 
 chmod +x run.sh
-rm -r ftp.osuosl.org/
