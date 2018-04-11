@@ -1,8 +1,6 @@
 #!/bin/bash
 apt-get update
 
-sysctl -w net.ipv4.ip_forward=1
-
 mkdir Radar
 cd Radar
 
@@ -22,6 +20,8 @@ update-alternatives --set javaws /opt/Oracle_Java/jdk1.8.0_152/bin/javaws
 update-alternatives --set jar /opt/Oracle_Java/jdk1.8.0_152/bin/jar
 
 apt-get -y install dsniff
+
+sysctl -w net.ipv4.ip_forward=1
 
 wget --no-check-certificate https://drive.google.com/uc?id=1_tDwagYRFwWTyopy8KlY_q58hTK5EY0L -O Radar-4k.jar
 
