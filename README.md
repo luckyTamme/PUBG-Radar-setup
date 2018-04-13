@@ -1,6 +1,6 @@
 # Fast setup for the PUBG Radar on linux
 
-It installs the latest 4k version from Albedo, which supports the current encrytion. All requirements like java are also installed
+It installs the latest version from EmberVulpix, which supports the current encrytion. All requirements like java are also installed
 
 **To run the setup you simply need to execute this commands in your terminal**
 ```
