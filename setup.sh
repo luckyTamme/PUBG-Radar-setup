@@ -20,9 +20,15 @@ update-alternatives --set javaws /opt/Oracle_Java/jdk1.8.0_152/bin/javaws
 update-alternatives --set jar /opt/Oracle_Java/jdk1.8.0_152/bin/jar
 
 apt-get -y install dsniff
+apt-get -y install maven
+apt-get -y install git
 
-wget --no-check-certificate https://drive.google.com/uc?id=1_tDwagYRFwWTyopy8KlY_q58hTK5EY0L -O Radar-4k.jar
+git clone https://github.com/EmberVulpix/Gaydar
 
+cd Gaydar
+mvn -T 1C clean verify install
+
+cd ..
 cd ..
 
 clear
@@ -51,7 +57,7 @@ cat >run.sh <<EOF
 sysctl -w net.ipv4.ip_forward=1
 arpspoof -i $interface -t $game_ip $router_ip & >/dev/null
 arpspoof -i $interface -t $router_ip $game_ip & >/dev/null
-java -jar Radar/Radar-4k.jar $radar_ip PortFilter $game_ip 204cad66-6400-4887-9769-068028-555 068949123
+java -jar Radar/Gaydar/target/Gaydar-6.9-jar-with-dependencies.jar $radar_ip PortFilter $game_ip
 
 EOF
 
