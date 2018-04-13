@@ -21,8 +21,6 @@ update-alternatives --set jar /opt/Oracle_Java/jdk1.8.0_152/bin/jar
 
 apt-get -y install dsniff
 
-sysctl -w net.ipv4.ip_forward=1
-
 wget --no-check-certificate https://drive.google.com/uc?id=1_tDwagYRFwWTyopy8KlY_q58hTK5EY0L -O Radar-4k.jar
 
 cd ..
@@ -50,6 +48,7 @@ clear
 
 cat >run.sh <<EOF
 #!/bin/bash
+sysctl -w net.ipv4.ip_forward=1
 arpspoof -i $interface -t $game_ip $router_ip & >/dev/null
 arpspoof -i $interface -t $router_ip $game_ip & >/dev/null
 java -jar Radar/Radar-4k.jar $radar_ip PortFilter $game_ip 204cad66-6400-4887-9769-068028-555 068949123
