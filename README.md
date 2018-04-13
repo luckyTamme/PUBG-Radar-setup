@@ -6,7 +6,7 @@ It installs the latest version from EmberVulpix, which supports the current encr
 ```
 wget https://raw.githubusercontent.com/zecjy/PUBG_radar_setup/master/setup.sh
 sudo chmod +x setup.sh
-sudo ./setup
+sudo ./setup.sh
 ```
 
 **In the setup process you will be asked for 3 IP addresses, your gamePC where PUBG runs, the RadarPC IP on which the setup runs and your router IP which is displayed as gateway.
