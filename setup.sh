@@ -19,6 +19,8 @@ update-alternatives --set javac /opt/Oracle_Java/jdk1.8.0_152/bin/javac
 update-alternatives --set javaws /opt/Oracle_Java/jdk1.8.0_152/bin/javaws
 update-alternatives --set jar /opt/Oracle_Java/jdk1.8.0_152/bin/jar
 
+sed -i 's/#crypto.policy=unlimited.*/crypto.policy=unlimited/' '/opt/Oracle_Java/jdk1.8.0_152/jre/lib/security'
+
 apt-get -y install dsniff
 apt-get -y install maven
 apt-get -y install git
