@@ -19,6 +19,8 @@ update-alternatives --set javac /opt/Oracle_Java/jdk1.8.0_152/bin/javac
 update-alternatives --set javaws /opt/Oracle_Java/jdk1.8.0_152/bin/javaws
 update-alternatives --set jar /opt/Oracle_Java/jdk1.8.0_152/bin/jar
 
+sed -i 's/#crypto.policy=unlimited.*/crypto.policy=unlimited/' '/opt/Oracle_Java/jdk1.8.0_152/jre/lib/java.security'
+
 apt-get -y install dsniff
 apt-get -y install maven
 apt-get -y install git
@@ -61,7 +63,6 @@ clear
 cat >run.sh <<EOF
 #!/bin/bash
 sysctl -w net.ipv4.ip_forward=1
-sed -i 's/#crypto.policy=unlimited.*/crypto.policy=unlimited/' '/opt/Oracle_Java/jdk1.8.0_152/jre/lib/security'
 arpspoof -i $interface -t $game_ip $router_ip & >/dev/null
 arpspoof -i $interface -t $router_ip $game_ip & >/dev/null
 java -jar Radar/Gaydar/target/Gaydar-6.9-jar-with-dependencies.jar $radar_ip PortFilter $game_ip
