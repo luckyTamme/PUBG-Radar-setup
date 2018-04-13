@@ -30,6 +30,11 @@ git clone https://github.com/EmberVulpix/Gaydar
 cd Gaydar
 mvn -T 1C clean verify install
 
+mv src/main/resources/maps/Erangel_Minimap.png Erangel8k.png
+mv src/main/resources/maps/Miramar_Minimap.png Miramar8k.png
+mv src/main/resources/maps/Erangel4k.png Erangel_Minimap.png
+mv src/main/resources/maps/Miramar4k.png Miramar_Minimap.png
+
 cd ..
 cd ..
 
