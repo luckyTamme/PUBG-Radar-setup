@@ -18,5 +18,5 @@ On windows, use `ipconfig` in cmd to find your IP and gateway, and on linux use 
 `sudo ./run.sh`
 
 **Credits to:**
-* *Albedo: https://yougame.biz/threads/40333*
+* *EmberVulpix: https://github.com/EmberVulpix/Gaydar*
 * *sm00thelf for the basic script: https://high-minded.net/members/sm00thelf.40217/*
