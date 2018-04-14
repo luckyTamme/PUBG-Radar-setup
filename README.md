@@ -14,8 +14,25 @@ On windows, use `ipconfig` in cmd to find your IP and gateway, and on linux use 
 
 * *Both systems need to be connected via LAN and in the same network!*
 
+The setup installs the radar in the `Radar` folder. There will be `update.sh`, `create_run.sh` and `run.sh`.
+
 **To start the Radar execute:**
-`sudo ./run.sh`
+```
+cd Radar
+sudo ./run.sh
+```
+
+**If you want to update to the latest version or switch between 4k and 8k map:**
+```
+cd Radar
+sudo ./update.sh
+```
+
+**If an IP changed or your run.sh is no longer working right:**
+```
+cd Radar
+sudo ./create_run.sh
+```
 
 **Credits to:**
 * *EmberVulpix: https://github.com/EmberVulpix/Gaydar*
