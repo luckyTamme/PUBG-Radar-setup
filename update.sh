@@ -42,8 +42,10 @@ if [ -e run.sh ]
 then
   echo "Keep previous run.sh [Y/N]? "
   read keep
-  if [ "$keep" != "${keep#[Yy]}" ] ;then
+  if [ "$keep" != "${keep#[Yy]}" ]
+  then
     exit
+  fi
 fi
 
 wget https://raw.githubusercontent.com/zecjy/PUBG_radar_setup/master/create_run.sh -O create_run.sh
