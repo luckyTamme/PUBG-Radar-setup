@@ -38,6 +38,6 @@ done
 
 mvn -T 1C clean verify install
 
-wget https://raw.githubusercontent.com/zecjy/PUBG_radar_setup/master/create_run.sh
+wget https://raw.githubusercontent.com/zecjy/PUBG_radar_setup/master/create_run.sh -O create_run.sh
 chmod +x create_run.sh
 ./create_run.sh
