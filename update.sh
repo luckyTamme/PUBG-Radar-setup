@@ -38,6 +38,14 @@ done
 
 mvn -T 1C clean verify install
 
+if [ -e run.sh ]
+then
+  echo "Keep previous run.sh [Y/N]? "
+  read keep
+  if [ "$keep" != "${keep#[Yy]}" ] ;then
+    exit
+fi
+
 wget https://raw.githubusercontent.com/zecjy/PUBG_radar_setup/master/create_run.sh -O create_run.sh
 chmod +x create_run.sh
 ./create_run.sh
