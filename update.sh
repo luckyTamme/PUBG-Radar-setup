@@ -38,6 +38,8 @@ done
 
 mvn -T 1C clean verify install
 
+cd ..
+
 if [ -e run.sh ]
 then
   echo "Keep previous run.sh [Y/N]? "
