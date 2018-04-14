@@ -1,5 +1,4 @@
 #!/bin/bash
-cd ..
 
 echo ""
 echo "PUBG PC IP (192.168.??.??)"
