@@ -23,7 +23,7 @@ cat >run.sh <<EOF
 sysctl -w net.ipv4.ip_forward=1
 arpspoof -i $interface -t $game_ip $router_ip & >/dev/null
 arpspoof -i $interface -t $router_ip $game_ip & >/dev/null
-java -jar Gaydar/target/Gaydar-6.9-jar-with-dependencies.jar $radar_ip PortFilter $game_ip
+java -jar PUBG-Radar/target/Gaydar-6.9-jar-with-dependencies.jar $radar_ip PortFilter $game_ip
 
 EOF
 
