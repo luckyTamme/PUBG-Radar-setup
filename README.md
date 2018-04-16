@@ -10,7 +10,7 @@ sudo ./setup.sh
 ```
 
 **In the setup process you will be asked for 3 IP addresses, your gamePC where PUBG runs, the RadarPC IP on which the setup runs and your router IP which is displayed as gateway.
-On windows, use `ipconfig` in cmd to find your IP and gateway, and on linux use `ifconfig`. Your interface will most likely be `ens33` or `enp3os`, don't choose `lo`**
+On windows, use `ipconfig` in cmd to find your IP and gateway, and on linux use `ifconfig`. Your interface will most likely be `ens33` or `enp3s0`, don't choose `lo`**
 
 * *Both systems need to be connected via the same medium (WiFi|WiFi oder LAN|LAN) and in the same network (e.g. 192.168.0.2 + 192.168.0.3) !*
 
