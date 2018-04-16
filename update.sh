@@ -1,9 +1,8 @@
 #!/bin/bash
-rm -r Gaydar
+rm -r PUBG-Radar
 
-git clone https://github.com/EmberVulpix/Gaydar
-
-cd Gaydar
+git clone https://github.com/zecjy/PUBG-Radar
+cd PUBG-Radar
 
 PS3="Which map do you want to use? "
 options=("4k Map" "8k Map")
