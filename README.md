@@ -21,6 +21,7 @@ The setup installs the radar in the `Radar` folder. There will be `update.sh`, `
 cd Radar
 sudo ./run.sh
 ```
+*If you want to see the arpspoof output (e.g. you want to see if your ip setup works) use `sudo ./run.sh --show_arpspoof`*
 
 **If you want to update to the latest version or switch between 4k and 8k map:**
 ```
