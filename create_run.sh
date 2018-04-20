@@ -15,8 +15,12 @@ read radar_ip
 echo ""
 echo "interface name"
 ls /sys/class/net
-
 read interface
+
+echo ""
+echo "ram to use (e.g. 4g or 3g)"
+free -h
+read ram
 
 cat >run.sh <<EOF
 #!/bin/bash
@@ -29,7 +33,7 @@ else
   arpspoof -i $interface -t $game_ip $router_ip &> /dev/null
   arpspoof -i $interface -t $router_ip $game_ip &> /dev/null
 fi
-java -jar PUBG-Radar/target/Gaydar-6.9-jar-with-dependencies.jar $radar_ip PortFilter $game_ip
+java -Xmx$ram -jar PUBG-Radar/target/Gaydar-6.9-jar-with-dependencies.jar $radar_ip PortFilter $game_ip
 
 EOF
 
