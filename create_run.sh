@@ -27,8 +27,8 @@ cat >run.sh <<EOF
 sysctl -w net.ipv4.ip_forward=1
 if [ -z "\$1" ]
 then
-  arpspoof -i $interface -t $game_ip $router_ip &>/dev/null &
-  arpspoof -i $interface -t $router_ip $game_ip &>/dev/null &
+  arpspoof -i $interface -t $game_ip $router_ip &> /dev/null &
+  arpspoof -i $interface -t $router_ip $game_ip &> /dev/null &
 elif [ "\$1" == "--show_arpspoof" ]
 then
   arpspoof -i $interface -t $game_ip $router_ip &
