@@ -30,8 +30,8 @@ then
   arpspoof -i $interface -t $game_ip $router_ip
   arpspoof -i $interface -t $router_ip $game_ip
 else
-  arpspoof -i $interface -t $game_ip $router_ip &> /dev/null
-  arpspoof -i $interface -t $router_ip $game_ip &> /dev/null
+  arpspoof -i $interface -t $game_ip $router_ip & >/dev/null
+  arpspoof -i $interface -t $router_ip $game_ip & >/dev/null
 fi
 java -Xmx$ram -jar PUBG-Radar/target/Gaydar-6.9-jar-with-dependencies.jar $radar_ip PortFilter $game_ip
 
