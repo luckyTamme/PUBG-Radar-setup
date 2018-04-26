@@ -2,6 +2,10 @@
 
 It installs the latest version from EmberVulpix, which supports the current encrytion. All requirements like java are also installed
 
+
+* **__Both systems need to be connected via the same medium (WiFi|WiFi oder LAN|LAN) and in the same network (e.g. 192.168.0.2 + 192.168.0.3) !__**
+
+
 **To run the setup you simply need to execute this commands in your terminal**
 ```
 wget https://raw.githubusercontent.com/zecjy/PUBG_radar_setup/master/setup.sh
@@ -13,7 +17,6 @@ sudo ./setup.sh
 On windows, use `ipconfig` in cmd to find your IP and gateway, and on linux use `ifconfig`. Your interface will most likely be `ens33` or `enp3s0`, don't choose `lo`.
 When your asked for RAM, look in the `Mem:` line in collum `free`. Choose a lower value e.g. 4.2G -> type `4g`.**
 
-* *Both systems need to be connected via the same medium (WiFi|WiFi oder LAN|LAN) and in the same network (e.g. 192.168.0.2 + 192.168.0.3) !*
 
 The setup installs the radar in the `Radar` folder. There will be `update.sh`, `create_run.sh` and `run.sh`.
 
