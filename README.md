@@ -4,7 +4,7 @@ It installs the latest version from EmberVulpix, which supports the current encr
 
 **To run the setup you simply need to execute this commands in your terminal**
 ```
-wget https://raw.githubusercontent.com/zecjy/PUBG_radar_setup/master/setup.sh
+wget https://raw.githubusercontent.com/zecjy/PUBG-Radar-setup/master/setup.sh
 sudo chmod +x setup.sh
 sudo ./setup.sh
 ```
