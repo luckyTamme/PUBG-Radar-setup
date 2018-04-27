@@ -35,7 +35,9 @@ do
     esac
 done
 
-mvn -T 1C clean verify install
+cores=$(nproc)
+
+mvn -T "$cores"C clean verify install
 
 cd ..
 
