@@ -1,7 +1,7 @@
 #!/bin/bash
 rm -r PUBG-Radar
 
-git clone https://github.com/zecjy/PUBG-Radar
+git clone https://github.com/EmberVulpix/Gaydar
 cd PUBG-Radar
 
 PS3="Which map do you want to use? "
