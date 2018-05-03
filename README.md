@@ -29,12 +29,25 @@ sudo ./run.sh
 cd Radar
 sudo ./update.sh
 ```
+While the 8k map is more detailed than the 4k map, the 8k map may cause performance issues, especially on lower-end PCs and Virtual Machines. 
 
 **If an IP changed or your run.sh is no longer working right:**
 ```
 cd Radar
 sudo ./create_run.sh
 ```
+
+**FAQ:**
+**Q:** When I try to run the radar, it returns an error.
+**A:** You likely set up something wrong. Make sure the IP of your Radar PC is in the same range as your gateway IP. If it isn't, change the network type of your VM in Virtualbox manager to "Bridge adapter" instead of "NAT", then run:
+```
+cd Radar
+sudo ./create_run.sh
+```
+If that doesn't resolve the issue, try to run setup.sh again.
+
+**Q:** I get the "encryption token", but the radar is gray.
+**A:** This could be caused by various factors. First make sure you have allocated enough RAM for the radar to run (and that you actually have enough free RAM available in your VM). If you're sure you have enough RAM allocated, but the issue persists, it's possible that your router is blocking ARP spoofing. In that case your best guess would be to disable the feature that prevents the ARP spofing from working in your router settings, or to temporarily switch to a router which doesn't block ARP spoofing. 
 
 **Credits to:**
 * *EmberVulpix: https://github.com/EmberVulpix/Gaydar*
