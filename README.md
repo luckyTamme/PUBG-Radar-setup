@@ -1,4 +1,7 @@
-# Fast setup for the PUBG Radar on linux
+### Fast setup for the PUBG Radar on linux
+
+
+# ***CURRENTLY OUTDATED***
 
 It installs the latest version from EmberVulpix, which supports the current encrytion. All requirements like java are also installed
 
